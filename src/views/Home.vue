@@ -1,18 +1,23 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="link_like_button">
+        <router-link to="/trainer">Improve your english</router-link>
+    </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+<style scoped>
+.link_like_button {
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 250px;
+    margin: 150px auto 0 auto;
 }
-</script>
+.link_like_button a {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    text-decoration: none;
+    color: #666666;
+}
+</style>
